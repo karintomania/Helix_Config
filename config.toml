@@ -1,0 +1,19 @@
+theme="catppuccin_mocha"
+# theme="gruvbox"
+
+[editor.cursor-shape]
+insert="bar"
+
+[keys.normal]
+C-k = "scroll_up"
+C-j = "scroll_down"
+C-h="jump_view_left"
+C-l="jump_view_right"
+K="hover"
+V=["select_mode", "extend_line_below"]
+
+[keys.insert]
+j = {j = "normal_mode"}
+
+[editor.soft-wrap]
+enable = true
