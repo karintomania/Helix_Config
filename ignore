@@ -3,4 +3,6 @@
 !.github/
 !.gitignore
 .DS_Store
+!.env*
+!.helix/
 
