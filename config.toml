@@ -13,11 +13,17 @@ Y = "yank_joined_to_clipboard"
 R = "replace_selections_with_clipboard"
 d = ["yank_to_clipboard", "delete_selection_noyank"]
 
+# scroll editor without moving cursor
 C-k = "scroll_up"
 C-j = "scroll_down"
+
+# Jump window
 C-h="jump_view_left"
 C-l="jump_view_right"
+
 K="hover"
+
+# mimic vim's V
 V=["select_mode", "extend_line_below"]
 
 [keys.select]
@@ -30,10 +36,12 @@ R = "replace_selections_with_clipboard"
 d = ["yank_to_clipboard", "delete_selection_noyank"]
 
 [keys.normal.g]
+# swap the behaviour of gh and gs
 h = "goto_first_nonwhitespace"
 s = "goto_line_start"
 
 [keys.insert]
+# go back to normal mode by jj instead of ESC
 j = {j = "normal_mode"}
 
 [editor.soft-wrap]
