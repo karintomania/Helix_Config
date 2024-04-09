@@ -29,12 +29,12 @@ Y = "yank_joined_to_clipboard"
 R = "replace_selections_with_clipboard"
 d = ["yank_to_clipboard", "delete_selection_noyank"]
 
+[keys.normal.g]
+h = "goto_first_nonwhitespace"
+s = "goto_line_start"
+
 [keys.insert]
 j = {j = "normal_mode"}
 
 [editor.soft-wrap]
 enable = true
-
-[editor.file-picker]
-hidden = false
-git-ignore = false
